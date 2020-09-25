@@ -3,82 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="./css/common/reset.css" rel="stylesheet">
+<link href="./css/common/default.css" rel="stylesheet">
 <style type="text/css">
-	/*header*/
-	header {
-		width: 90%;
-		height: 127px;
-   		
-	}
-	
 	#header_img{
 		width: 100%;
-		height: 3px;
+		height: 167px;
+		z-index:-3000;
+		border-bottom:1px gray solid;
 		position: absolute;
 		background-image: url("./images/common/bg_top.gif");
 		background-repeat: no-repeat;
 		background-position: center top;
    		left: 0;
-   		top: 0;
+   		top: 0px;
 	}
-	
-	#header_nav{
-	display: inline-block;
-		width: 40%;
-		height: 47px;
-		padding: 81px 0 0 0;
-	}
-	
-	#header_nav li{
-		float: right;
-		list-style: none;
-		height: 127px;
-		width: 30%;
-	}
-	
-	#header_nav a{
-		float: right;
-		text-align: right;
-		color: black;
-		font-weight: bold;
-		text-decoration: none;
-	}
-	
-	#header_logo{
-		display: inline-block;
-		width: 20%;
-		height: 47px;
-		padding: 40px 0px;
-		text-align: center;
-	}
-	
-	#header_sub{
-		padding: 81px 0 0 0;
-		display: inline-block;
-		width: 38%;
-		height: 47px;
-	}
-	
-	#header_sub li{
-		float: left;
-		list-style: none;
-		height: 127px;
-		width: 20%;
-		text-align: left;
-	}
-	
-	#header_sub a{
-		color: black;
-		font-weight: bold;
-		text-decoration: none;
-	}
-	
 	/*section*/
 	#main_container {
 		width: 1260px;
 		min-height: 842px;
 		padding-top: 10px;
-		margin: 107px auto 50px 170px;
+		margin: 47px auto 50px 170px;
 		box-sizing: border-box;
 	}
 	
@@ -155,50 +100,6 @@
 		margin-bottom:5px;
 		margin-left: 350px;}
 	
-	
-	/*footer*/
-	#footer_wrap {
-		width:60%;
-		height:76px;
-		clear:both;
-		padding:10px;
-		margin:  107px auto 50px 185px;
-		}
-	
-	#footer_nav{
-		width:70%;
-		display: inline-block;
-		text-align: left;
-	}
-	
-	#footer_nav li{
-		display: inline-block;
-		list-style: none;
-		text-decoration: none;
-		color: #7C7C7C;
-		text-align: left;
-		font-size: 12px;
-	}
-	
-	#footer_nav a{
-		text-align: left;
-		text-decoration: none;
-		color: #7C7C7C;
-		font-size: 12px;
-	}
-	
-	#ft_site{
-		display: inline-block;
-		text-align: right;
-		height: 76px;
-		width: 20%;
-	}
-	
-	#ft_site > select{
-		color: ##7C7C7C;
-		border: 1px solid #dadada;
-	}
-	
 </style>
 </head>
 <body>
@@ -206,19 +107,17 @@
 	<!-- header -->
 	<header>
 		<div id="header_top">
-		
-			<div id="header_img"></div>
-			
+				<div id="header_img"></div>
 			<nav id="header_nav" class="header_menu">
 				<ul>
-					<li><a href="./board/boardList.html">행복한 나눔</a></li>
+					<li><a href="/MyWeb/board/boardList.html">행복한 나눔</a></li>
 					<li><a href="http://www.spc.co.kr/newsList">행복한 소식</a></li>
 					<li><a href="http://www.spc.co.kr/spc/smile/sangmedangStory_mindPhilosophy.spc">행복한 미소</a></li>
 				</ul>
 			</nav>
 			
 			<div id="header_logo" class="header_menu">
-				<img alt="" src="./images/common/logo.gif">
+				<a href="./index.html"><img alt="" src="./images/common/logo.gif"></a>
 			</div>
 			
 			<nav id="header_sub" class="header_menu">
@@ -230,7 +129,7 @@
 			</nav>
 			
 			<nav id="header_language">
-			</nav><hr>
+			</nav>
 		
 		</div>
 	</header>
