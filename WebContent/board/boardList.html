@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="./css/common/reset.css" rel="stylesheet">
 <title>Insert title here</title>
 <style type="text/css">
-
 	header {
 		width: 90%;
 		height: 127px;
@@ -22,50 +22,57 @@
    		top: 0;
 	}
 	
-	/*footer*/
-	#footer_wrap {
-		width:60%;
-		height:76px;
-		clear:both;
-		padding:10px;
-		margin:107px auto 50px 185px;
-		}
-	
-	#footer_nav{
-		width:70%;
-		display: inline-block;
-		text-align: left;
+	#header_nav{
+	display: inline-block;
+		width: 40%;
+		height: 47px;
+		padding: 81px 0 0 0;
 	}
 	
-	#footer_nav li{
-		display: inline-block;
+	#header_nav li{
+		float: right;
 		list-style: none;
-		text-decoration: none;
-		color: #7C7C7C;
-		text-align: left;
-		font-size: 12px;
+		height: 127px;
+		width: 30%;
 	}
 	
-	#footer_nav a{
-		text-align: left;
-		text-decoration: none;
-		color: #7C7C7C;
-		font-size: 12px;
-	}
-	
-	#ft_site{
-		margin-left: 60px;
-		display: inline-block;
+	#header_nav a{
+		float: right;
 		text-align: right;
-		height: 76px;
-		width: 20%;
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
 	}
 	
-	#ft_site > select{
-		color: ##7C7C7C;
-		border: 1px solid #dadada;
+	#header_logo{
+		display: inline-block;
+		width: 20%;
+		height: 47px;
+		padding: 40px 0px;
+		text-align: center;
 	}
-
+	
+	#header_sub{
+		padding: 81px 0 0 0;
+		display: inline-block;
+		width: 38%;
+		height: 47px;
+	}
+	
+	#header_sub li{
+		float: left;
+		list-style: none;
+		height: 127px;
+		width: 20%;
+		text-align: left;
+	}
+	
+	#header_sub a{
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
 	.title { width: 300px;
 			height: 60px;
 			margin: 0px auto;}
@@ -94,15 +101,82 @@
 	.under1 td a {
 	text-decoration: none;
 	color: #292929;}
+	
+	/*footer*/
+	#footer_wrap {
+		width:60%;
+		height:76px;
+		clear:both;
+		padding:10px;
+		margin:  107px auto 50px 185px;
+		}
+	
+	#footer_nav{
+		width:70%;
+		display: inline-block;
+		text-align: left;
+	}
+	
+	#footer_nav li{
+		display: inline-block;
+		list-style: none;
+		text-decoration: none;
+		color: #7C7C7C;
+		text-align: left;
+		font-size: 12px;
+	}
+	
+	#footer_nav a{
+		text-align: left;
+		text-decoration: none;
+		color: #7C7C7C;
+		font-size: 12px;
+	}
+	
+	#ft_site{
+		display: inline-block;
+		text-align: right;
+		height: 76px;
+		width: 20%;
+	}
+	
+	#ft_site > select{
+		color: ##7C7C7C;
+		border: 1px solid #dadada;
+	}
 			
 </style>
 </head>
 <body>
-
+	
 	<header>
 		<div id="header_top">
 		
 			<div id="header_img"></div>
+			
+			<nav id="header_nav" class="header_menu">
+				<ul>
+					<li><a href="./board/boardList.html">행복한 나눔</a></li>
+					<li><a href="http://www.spc.co.kr/newsList">행복한 소식</a></li>
+					<li><a href="http://www.spc.co.kr/spc/smile/sangmedangStory_mindPhilosophy.spc">행복한 미소</a></li>
+				</ul>
+			</nav>
+			
+			<div id="header_logo" class="header_menu">
+				<img alt="" src="./images/common/logo.gif">
+			</div>
+			
+			<nav id="header_sub" class="header_menu">
+				<ul>
+					<li><a href="http://www.spc.co.kr/spc/group/SPC_way.spc">그룹소개</a></li>
+					<li><a href="https://spc.recruiter.co.kr/appsite/company/index">인재채용</a></li>
+					<li><a href="http://www.spc.co.kr/spc/smile/education/SF_vision.spc">인재양성</a></li>
+				</ul>
+			</nav>
+			
+			<nav id="header_language">
+			</nav><hr>
+		
 		</div>
 	</header>
 
@@ -208,6 +282,7 @@
 		</tr>
 	
 	</table>
+	<!-- footer -->
 	<footer>
 		<div id="footer_wrap">
 			<div id="ft_menu">
