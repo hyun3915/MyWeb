@@ -4,6 +4,68 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+
+	header {
+		width: 90%;
+		height: 127px;
+   		
+	}
+	
+	#header_img{
+		width: 100%;
+		height: 3px;
+		position: absolute;
+		background-image: url("../images/common/bg_top.gif");
+		background-repeat: no-repeat;
+		background-position: center top;
+   		left: 0;
+   		top: 0;
+	}
+	
+	/*footer*/
+	#footer_wrap {
+		width:60%;
+		height:76px;
+		clear:both;
+		padding:10px;
+		margin:107px auto 50px 185px;
+		}
+	
+	#footer_nav{
+		width:70%;
+		display: inline-block;
+		text-align: left;
+	}
+	
+	#footer_nav li{
+		display: inline-block;
+		list-style: none;
+		text-decoration: none;
+		color: #7C7C7C;
+		text-align: left;
+		font-size: 12px;
+	}
+	
+	#footer_nav a{
+		text-align: left;
+		text-decoration: none;
+		color: #7C7C7C;
+		font-size: 12px;
+	}
+	
+	#ft_site{
+		margin-left: 60px;
+		display: inline-block;
+		text-align: right;
+		height: 76px;
+		width: 20%;
+	}
+	
+	#ft_site > select{
+		color: ##7C7C7C;
+		border: 1px solid #dadada;
+	}
+
 	.title { width: 300px;
 			height: 60px;
 			margin: 0px auto;}
@@ -36,6 +98,14 @@
 </style>
 </head>
 <body>
+
+	<header>
+		<div id="header_top">
+		
+			<div id="header_img"></div>
+		</div>
+	</header>
+
 	<div>
 	<h1 class="title">Board List Page</h1></div>
 	<div>
@@ -138,7 +208,61 @@
 		</tr>
 	
 	</table>
-	
+	<footer>
+		<div id="footer_wrap">
+			<div id="ft_menu">
+				<nav id="footer_nav">
+					<ul>
+						<li><a href="http://www.spc.co.kr/spc/smile/etc/sitemap.spc">사이트맵</a></li>
+						<li>|</li>
+						<li><a href="http://www.spc.co.kr/spc/smile/etc/privacy.spc"><b>개인정보처리방침</b></a></li>
+						<li>|</li>
+						<li><a href="http://www.spc.co.kr/spc/smile/etc/email.spc">이메일수집 거부</a></li>
+						<li>|</li>
+						<li><a href="http://happy.spc.co.kr/indexframe.jsp">거래희망사전등록</a></li>
+						<li>|</li>
+						<li><a href="http://www.spc.co.kr/spc/smile/group/groupMap.spc">오시는길</a></li>
+						<select>
+							<option>브로셔 다운로드</option>
+							<option>영문</option>
+							<option>국문</option>
+						</select>
+						
+					</ul>
+					<ul>
+						<li>서울시 서초구 양재동 남부순환로 2620 (양재동 11-149) SPC그룹</li>
+					</ul>
+					<ul>
+						<li>COPYRIGHT SPC ALL RIGHTS RESERVED</li>
+					</ul>
+				</nav>
+				
+				<div id="ft_site">
+				<select>
+					<option>FAMILY SITE</option>
+					<option>(주)비알코리아</option>
+					<option>(주)SPC삼립</option>
+					<option>파리바게뜨</option>
+					<option>파리크라상</option>
+					<option>베스킨라빈스</option>
+					<option>던킨도너츠</option>
+					<option>쉐이크쉑</option>
+					<option>파스쿠찌</option>
+					<option>잠바주스</option>
+					<option>피그인더가든</option>
+					<option>그릭슈바인</option>
+					<option>빚은</option>
+					<option>SPC외식브랜드</option>
+					<option>디퀸즈케이터링</option>
+					<option>해피포인트카드</option>
+				</select>
+				
+			</div>
+			</div>
+			
+			
+		</div>
+	</footer>
 	
 </body>
 </html>
