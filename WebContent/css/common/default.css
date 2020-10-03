@@ -20,7 +20,7 @@
 		height:76px;
 		clear:both;
 		padding:10px;
-		margin:  107px auto 50px 285px;
+		margin:  107px auto 50px 245px;
 		}
 	
 	#footer_nav{
@@ -48,6 +48,7 @@
 	#ft_site{
 		display: inline-block;
 		text-align: right;
+		margin: 10px;
 		height: 76px;
 		width: 20%;
 	}
